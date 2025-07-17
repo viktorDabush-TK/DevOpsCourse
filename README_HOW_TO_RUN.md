@@ -5,7 +5,7 @@ This guide explains how to deploy the **Notes App** (Node.js backend + React fro
 ---
 
 ## ✅ Prerequisite
-
+ 
 - Docker must be installed on the VM
 
 ---
