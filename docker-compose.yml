@@ -8,16 +8,16 @@ services:
       - "5000:5000"
     restart: unless-stopped
 
-frontend:
-  image: vico958/notes-frontend:latest
-  container_name: notes-frontend
-  ports:
-    - "3000:80"
-  depends_on:
-    - backend
-  restart: unless-stopped
-  environment:
-    - BACKEND_URL=backend:5000
+  frontend:
+    image: vico958/notes-frontend:latest
+    container_name: notes-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    environment:
+      - BACKEND_URL=backend:5000
 
 networks:
   default:
