@@ -1,7 +1,6 @@
 name: CI for Notes App
 
 on:
-  push:
   pull_request:
 
 jobs:
