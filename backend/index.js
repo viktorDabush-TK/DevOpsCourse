@@ -27,4 +27,8 @@ const cors = require('cors');
 app.use(cors({
   origin: 'http://localhost:3000'  
 }));
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+if (require.main === module) {
+  app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+}
+
+module.exports = app;
